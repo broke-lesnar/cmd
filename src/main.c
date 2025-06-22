@@ -9,15 +9,20 @@
 #include "clear.h"
 #include "ec.h"
 #include "man.h"
+#include "help.h"
 
 int main()
 {
   char *line = NULL;
   size_t bufsize = 0;
 
+  printf("\n========================================================");
+  printf("\n\n\tA lightweight command-line experience.");
+  printf("\n\n========================================================\n\n");
+
   while (1)
   {
-    printf("%s@%s:~$ ", USERNAME, HOSTNAME);
+    printf("\033[1;34m%s@%s\033[0;34m:~$ \033[0m", USERNAME, HOSTNAME);
 
     long characters = my_getline(&line, &bufsize, stdin);
     if (characters == -1)
@@ -43,6 +48,8 @@ int main()
       ec(argument);
     if (strcmp(command, "man") == 0)
       man(argument);
+    if (strcmp(command, "help") == 0)
+      help(argument);
   }
 
   free(line);
