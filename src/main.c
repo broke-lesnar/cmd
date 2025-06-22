@@ -8,6 +8,7 @@
 #include "pwd.h"
 #include "clear.h"
 #include "ec.h"
+#include "man.h"
 
 int main()
 {
@@ -40,6 +41,8 @@ int main()
       clear();
     if (strcmp(command, "echo") == 0)
       ec(argument);
+    if (strcmp(command, "man") == 0)
+      man(argument);
   }
 
   free(line);

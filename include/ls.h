@@ -11,8 +11,9 @@ int ls()
   {
     while ((dir = readdir(d)) != NULL)
     {
-      printf("%s\n", dir->d_name);
+      printf("%s\t", dir->d_name);
     }
+    printf("\n");
     closedir(d);
   }
   else
