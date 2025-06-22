@@ -1,6 +1,7 @@
-idk what to put here lol
+A lightweight version of bash (weekend "fun" activity)
 
-build the debug version:- make debug
-build the release version:- make release
-build and run debug version:- make run-debug
-build and run release version:- make run-release
+- To build the debug version, run ```make debug```
+- To build the release version, run ```make release```
+- To build and run debug version, run ```make run-debug```
+- To build and run release version, run ```make run-release```
+- Last but not least, run ```make clean``` to clean stuff up
