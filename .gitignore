@@ -41,7 +41,6 @@ build-aux/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
 
 # === Documentation / Logs ===
 
