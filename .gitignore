@@ -1,0 +1,55 @@
+# === Build Output ===
+
+# Compiled binary executables and object files
+/bin/
+*.out
+*.elf
+*.o
+
+# Dependency files (if using -MMD or similar)
+*.d
+
+# === Backup / Temp Files ===
+
+*~
+*.bak
+*.swp
+*.tmp
+
+# Debugger symbol files / core dumps
+core
+*.dSYM/
+*.map
+
+# === IDE / Editor Settings ===
+
+.vscode/
+.idea/
+*.code-workspace
+
+# === Build Tools (optional, if used) ===
+
+# Autotools
+Makefile.in
+config.h.in
+configure
+aclocal.m4
+autom4te.cache/
+build-aux/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# === Documentation / Logs ===
+
+doc/
+docs/
+*.log
+
+# === OS / File Manager Junk ===
+
+.DS_Store
+Thumbs.db
