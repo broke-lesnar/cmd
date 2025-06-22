@@ -3,6 +3,9 @@
 
 int man(const char *args)
 {
+  if (args == NULL || strcmp(args, "") == 0)
+    return 0;
+
   if (strcmp(args, "ls") == 0)
   {
     printf("\033[1mLS(1)\033[0m                     User Commands                     \033[1mLS(1)\033[0m\n\n");
