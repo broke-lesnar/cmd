@@ -10,6 +10,8 @@
 #include "ec.h"
 #include "man.h"
 #include "help.h"
+#include "mkdir.h"
+#include "rm.h"
 
 int main()
 {
@@ -50,6 +52,10 @@ int main()
       man(argument);
     if (strcmp(command, "help") == 0)
       help(argument);
+    if (strcmp(command, "mkdir") == 0)
+      my_mkdir(argument);
+    if (strcmp(command, "rm") == 0)
+      my_rm(argument);
   }
 
   free(line);
