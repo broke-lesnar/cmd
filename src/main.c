@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "constants.h"
 #include "my_getline.h"
-
-#define USERNAME "vinod"
-#define HOSTNAME "hp"
+#include "ls.h"
 
 int main()
 {
@@ -22,6 +21,8 @@ int main()
       choice[characters - 1] = '\0';
     if (strcmp(choice, "exit") == 0)
       break;
+    if (strcmp(choice, "ls") == 0)
+      ls();
   }
 
   free(choice);
